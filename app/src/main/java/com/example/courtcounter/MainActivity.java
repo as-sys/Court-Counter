@@ -9,6 +9,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * Declare Global Variable
+     */
+
+    int scoreTeamA = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,24 +23,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Adds three points
+     * Adds three points for Team A
      */
     public void addThreeForTeamA(View v){
-        displayForTeamA(3);
+        scoreTeamA = scoreTeamA+3''
+        displayForTeamA(scoreTeamA);
+
     }
 
+
     /**
-     * Adds two points
+     * Adds two points for Team A
      */
     public void addTwoForTeamA(View v){
-        displayForTeamA(2);
+        scoreTeamA = scoreTeamA +2;
+        displayForTeamA(scoreTeamA);
+
     }
 
     /**
-     * Adds one point
+     * Adds one point for Team A
      */
     public void addOneForTeamA(View v){
-        displayForTeamA(1);
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
+
     }
 
     /**
