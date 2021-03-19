@@ -10,16 +10,21 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     /**
-     * Declare Global Variable
+     * Declare & Initialize Global Variables Here
      */
 
     int scoreTeamA = 0;
+    int scoreTeamB = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    /*
+     * These Methods are for Team A
+     */
 
     /**
      * Adds three points for Team A
@@ -54,6 +59,46 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /*
+     * These Methods are for Team B
+     */
+
+    /**
+     * Adds three points for Team B
+     */
+    public void addThreeForTeamB(View v) {
+        scoreTeamB = scoreTeamB + 3;
+        displayForTeamB(scoreTeamB);
+
+    }
+
+
+    /**
+     * Adds two points for Team B
+     */
+    public void addTwoForTeamB(View v) {
+        scoreTeamB = scoreTeamB + 2;
+        displayForTeamB(scoreTeamB);
+
+    }
+
+    /**
+     * Adds one point for Team B
+     */
+    public void addOneForTeamB(View v) {
+        scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
+
+    }
+
+    /**
+     * Displays the given score for Team B
+     */
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
