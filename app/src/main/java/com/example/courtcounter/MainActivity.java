@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Adds three points for Team A
      */
-    public void addThreeForTeamA(View v){
-        scoreTeamA = scoreTeamA+3;
+    public void addThreeForTeamA(View v) {
+        scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
 
     }
@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Adds two points for Team A
      */
-    public void addTwoForTeamA(View v){
-        scoreTeamA = scoreTeamA +2;
+    public void addTwoForTeamA(View v) {
+        scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
 
     }
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Adds one point for Team A
      */
-    public void addOneForTeamA(View v){
+    public void addOneForTeamA(View v) {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
 
