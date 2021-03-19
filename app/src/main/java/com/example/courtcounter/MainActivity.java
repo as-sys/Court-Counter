@@ -19,14 +19,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        displayForTeamA(8);
     }
 
     /**
      * Adds three points for Team A
      */
     public void addThreeForTeamA(View v){
-        scoreTeamA = scoreTeamA+3''
+        scoreTeamA = scoreTeamA+3;
         displayForTeamA(scoreTeamA);
 
     }
